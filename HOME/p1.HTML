@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="stylesheet" href="p1.css">
+    <link rel="icon" href="../imagens/download-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+     <!-- Cabeçalho -->
+     <header class="header">
+        <div class="logo">
+            <img src="../imagens/download-removebg-preview.png" alt="Logo" />
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar..." />
+        </div>
+        <div class="header-icons">
+            <a href="../paginas/videos.html"><span class="icon">🎞️</span></a>
+        </div>
+    </header>
+    <div class="feed-container">
+        <h1> vivencias 💖</h1>
+        <div class="grid"> 
+            <!-- Adicione mais imagens conforme necessário -->
+            <img src="../imagens/meuAMOR1.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR1.jpg', 'Nosso primeiro encontro', 'Foi um dia inesquecível!')">
+            <img src="../imagens/meuAMOR2.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR2.jpg', 'Viagem juntos', 'Nossa aventura incrível!')">
+            <img src="../imagens/meuAMOR3.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR3.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR4.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMO4.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR5.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR5.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR6.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR6.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR7.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR7.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR8.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR8.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR9.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR9.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR10.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR10.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR11.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR11.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+            <img src="../imagens/meuAMOR12.jpg" alt="Dia especial" onclick="abrirModal('../imagens/meuAMOR12.jpg', 'Dia especial', 'O dia que mudou tudo!')">
+        </div>
+    </div>
+
+    <!-- Modal para abrir as imagens -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="p1.js"></script>
+</body>
+</html>

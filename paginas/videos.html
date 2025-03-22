@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos videos</title>
+    <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <a href="../HOME/p1.HTML">     <img src="../imagens/download-removebg-preview.png" alt="Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar">
+        </div>
+        <div class="header-icons">
+            <a href="../HOME/p1.HTML">   <span class="icon">👤</span></a>
+        </div>
+    </header>
+
+    <!-- Feed de Vídeos -->
+    <div class="feed-container">
+        <div class="post">
+            <div class="user-info">
+                <img class="profile-pic" src="../imagens/amor.jpg" alt="Perfil 1">
+                
+            </div>
+            <video class="post-video" controls onclick="openModal('video1.mp4')">
+                <source src="../videos/meuamor2.mp4" type="video/mp4">
+                Seu navegador não suporta o formato de vídeo.
+            </video>
+            <div class="post-actions">
+                <button class="like-btn">❤️ Curtir</button>
+                <button class="comment-btn">💬 Comentar</button>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="user-info">
+                <img class="profile-pic" src="../imagens/amor.jpg" alt="Perfil 2">
+                
+            </div>
+            <video class="post-video" controls onclick="openModal('video2.mp4')">
+                <source src="../videos/meuamor1.mp4" type="video/mp4">
+                Seu navegador não suporta o formato de vídeo.
+            </video>
+            <div class="post-actions">
+                <button class="like-btn">❤️ Curtir</button>
+                <button class="comment-btn">💬 Comentar</button>
+            </div>
+            <div class="post">
+                <div class="user-info">
+                    <img class="profile-pic" src="../imagens/amor.jpg" alt="Perfil 2">
+                    
+                </div>
+            <video class="post-video" controls onclick="openModal('video3.mp4')">
+                <source src="../videos/meuamor3.mp4" type="video/mp4">
+                Seu navegador não suporta o formato de vídeo.
+            </video>
+            <div class="post-actions">
+                <button class="like-btn">❤️ Curtir</button>
+                <button class="comment-btn">💬 Comentar</button>
+            </div>
+        </div>
+
+        <!-- Adicione mais posts conforme nec
+    </div>
+
+    <!-- Modal de vídeo -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content">
+            <video id="modal-video" controls>
+                <source src="../videos/meuamor3.mp4" type="video/mp4">
+                Seu navegador não suporta o formato de vídeo.
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
